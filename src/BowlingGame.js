@@ -1,13 +1,13 @@
 function Game() {
 
 	var rolls = [];
-	var currentRoll = 0;
 
 	this.roll = roll;
 	this.score = score;
 
-	function roll(pins) {
-		rolls[currentRoll++] = pins;
+	function roll(spins) {
+		rolls.length;
+		rolls.push(spins);
 	}
 
 	function score() {
@@ -20,7 +20,7 @@ function Game() {
 				points += rolls[frameIndex] + rolls[frameIndex + 1];
 			}
 			frameIndex += 2;
-		}
+		};
 		return points;
 	}
 
